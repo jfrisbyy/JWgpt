@@ -1,6 +1,6 @@
 # GitHub and independent hosting handoff
 
-Prepared September 28, 2026 from source commit `7bf2244a523e6a96168dfa07ce263b5d8a18f13f`.
+Prepared September 28, 2026 from the original hosting platform's source snapshot (imported here as commit `d180632`).
 
 ## Transfer status
 
@@ -22,18 +22,28 @@ Application source, dependency lockfile, database migrations, build and verifica
 
 Original PDF and image-pack collections are not present in this checkout. Some content is stored only in hosted storage. Do not describe the repository as a complete backup until these exports are verified.
 
-## Hosting and identity dependencies
+## Hosting and identity
 
-The current deployment is a Worker using D1 (`DB`) and R2 (`BUCKET`). The build uses `.openai/hosting.json`; independent hosting needs its own deployment configuration and resource bindings.
+The app deploys as a Cloudflare Worker with D1 (`DB`), R2 (`BUCKET`) and Workers Static Assets (`ASSETS`); see `wrangler.toml`. The older `.openai/hosting.json` is kept only for the previous platform.
 
-Current authentication depends on trusted platform `oai-authenticated-user-id` and `oai-authenticated-user-email` headers and ChatGPT sign-in/sign-out routes. Before hosting independently, replace these with server-verified sessions. Never trust equivalent headers supplied by a browser or simply remove the membership gate.
+Sign-in no longer depends on ChatGPT or platform headers. Accounts use email and password (`server/auth.mjs`):
 
-Map existing owner identifiers to new account identifiers across database records, access lists, and hashed-owner object prefixes. Account backup imports also validate ownership. Verify private-data isolation after migration.
+- Passwords are hashed with PBKDF2-SHA256 (100,000 iterations, per-user salt). Sessions are random tokens stored hashed in `auth_sessions`, sent as an `HttpOnly; Secure; SameSite=Lax` cookie, and expire after 30 days.
+- The Worker discards any client-sent `x-petey-user-*` or `oai-authenticated-*` headers and sets identity only from a valid session.
+- New members register with a single-use invitation code. After 8 wrong passwords an account is locked for 15 minutes.
+- The first administrator registers without a code using the address in the `FAMILY_ADMIN_EMAIL` secret. If an administrator member already exists from the old sign-in system, that account is linked, so existing records keep their owner id.
+- Other existing members get email sign-in through **Family → Create setup code** (or **Password reset code**). They choose **Reset password** on the sign-in screen, enter their email, a new password and the code. Their account keeps its original owner id, so studies, notes and answers stay attached.
 
-Runtime secrets include `OPENAI_API_KEY` and, where used, `LIBRARY_IMPORT_KEY`; `OPENAI_MODEL` is optional configuration. Inspect handlers for final environment requirements before deploying.
+### Deploying to Cloudflare
+
+1. `npx wrangler d1 create sister-petey` and `npx wrangler r2 bucket create sister-petey-library`; put the database id (and bucket name if different) in `wrangler.toml`.
+2. For a fresh database run `npm run db:migrate` (applies everything in `drizzle/`). For an imported export of the existing database, the earlier tables already exist, so apply only the new sign-in tables: `npx wrangler d1 execute DB --remote --file drizzle/0003_auth.sql`.
+3. Copy the R2 objects with their exact keys, and upload `data/semantic.json.gz` as `semantic.json.gz` (the Cloudflare build reads it from R2 instead of inlining it). Parsed publications, `bible.json.gz` and `search/*` are read from the same bucket.
+4. `npx wrangler secret put FAMILY_ADMIN_EMAIL` (plus `OPENAI_API_KEY` and `LIBRARY_IMPORT_KEY` if used). `OPENAI_MODEL` is optional.
+5. `npm run deploy`, then register the administrator account and issue setup codes to existing members.
 
 ## Verification
 
-Run `npm ci`, `npm run build`, and `npm run test:all`. Automated AI tests use mocks; they do not establish production billing or model availability. After migration, test real sign-in, membership, private-data isolation, reading and images, date-based materials, chat citations, saved answers, and backup restoration.
+Run `npm ci` and `npm run test:all` (CI runs the same on every push and pull request). Automated AI tests use mocks; they do not establish production billing or model availability. After migration, test real sign-in, membership, private-data isolation, reading and images, date-based materials, chat citations, saved answers, and backup restoration.
 
 See `LEARNING_AND_RELIABILITY.md` and `REFINEMENTS.md` for feature details and known verification limits.

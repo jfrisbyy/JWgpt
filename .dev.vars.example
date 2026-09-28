@@ -1,0 +1,5 @@
+# Copy to .dev.vars for `npm run dev` (wrangler dev). Never commit .dev.vars.
+FAMILY_ADMIN_EMAIL=you@example.com
+OPENAI_API_KEY=
+OPENAI_MODEL=
+LIBRARY_IMPORT_KEY=

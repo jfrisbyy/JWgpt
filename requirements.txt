@@ -1,0 +1,6 @@
+# Python tools in scripts/ that import PDFs and rebuild the parsed library and search indexes.
+# The web app itself needs only Node.js.
+PyMuPDF>=1.24
+Pillow>=10
+numpy>=1.26
+scikit-learn>=1.4

@@ -1,9 +1,12 @@
 import json,re,unicodedata,hashlib,gzip,pathlib,fitz,collections
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-RAW=ROOT.parent/'publication-pdfs'
+import os
+# Source PDFs live outside the repository; override with PETEY_PDF_DIR / PETEY_UPLOAD_DIR.
+RAW=pathlib.Path(os.environ.get('PETEY_PDF_DIR',ROOT.parent/'publication-pdfs'))
+UPLOAD=pathlib.Path(os.environ.get('PETEY_UPLOAD_DIR',ROOT.parent/'upload'))
 OUT=ROOT/'data/publications';OUT.mkdir(parents=True,exist_ok=True)
 manifest=json.loads((ROOT/'data/import-manifest.json').read_text())
-manifest += [{'id':'nwt','filename':'nwt_E.pdf','category':'bible','path':str(ROOT.parent/'upload/01-nwt_E.pdf'),'url':None},{'id':'nwt-study','filename':'nwtsty1_E.pdf','category':'bible','path':str(ROOT.parent/'upload/01-nwtsty1_E.pdf'),'url':None}]
+manifest += [{'id':'nwt','filename':'nwt_E.pdf','category':'bible','path':str(UPLOAD/'01-nwt_E.pdf'),'url':None},{'id':'nwt-study','filename':'nwtsty1_E.pdf','category':'bible','path':str(UPLOAD/'01-nwtsty1_E.pdf'),'url':None}]
 def clean(s):
  s=unicodedata.normalize('NFKC',s).replace('\x03','ʹ').replace('\x02','ʹ')
  s=re.sub(r'[\x00-\x1f&&[^\n]]','',s) if False else re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]','',s)

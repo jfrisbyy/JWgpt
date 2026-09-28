@@ -25,7 +25,7 @@ def merge(rects):
 
 def process(meta):
  path=ROOT/'data/publications'/f"{meta['id']}.json.gz";doc=json.loads(gzip.decompress(path.read_bytes()))
- pdf=fitz.open(ROOT.parent/'publication-pdfs'/meta['filename']);reuse=os.environ.get('READER_REUSE_IMAGES') and doc.get('readerVersion')==3
+ pdf=fitz.open(pathlib.Path(os.environ.get('PETEY_PDF_DIR',ROOT.parent/'publication-pdfs'))/meta['filename']);reuse=os.environ.get('READER_REUSE_IMAGES') and doc.get('readerVersion')==3
  packed=bytearray((OUT/f"{meta['id']}.pack").read_bytes()) if reuse else bytearray();image_count=question_count=0
  for pi,page in enumerate(pdf):
   w,h=page.rect.width,page.rect.height

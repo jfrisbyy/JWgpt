@@ -1,0 +1,19 @@
+name: Tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run test:all
+      - name: Check the Cloudflare build
+        run: npm run build:cloudflare && npx wrangler deploy --dry-run --outdir /tmp/worker

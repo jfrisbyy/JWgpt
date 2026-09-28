@@ -6,7 +6,7 @@ This release combines the private account foundation with topic-aware search, se
 
 ## Accounts and data
 
-- Platform-owned ChatGPT sign-in identifies each person. Membership is enforced on every reading and personal-data API, not just in the interface.
+- Email and password accounts (see `GITHUB_HANDOFF.md`) identify each person. Membership is enforced on every reading and personal-data API, not just in the interface.
 - The verified site owner's email bootstraps the administrator. Family invitations are random, hashed, single-use, expire after seven days, and can be revoked. Administrators can pause a member, but cannot read that person's private studies through the administration API.
 - Personal notes, highlights, conversations, memory, reading positions, and preferences persist per person. Existing D1 studies and R2 answers keep their original ownership. Browser-only records are offered for explicit import rather than silently assigned to an account.
 - Personal record writes and study writes use versions to reject stale overwrites. Temporary drafts are retained per signed-in person in session storage, with retry/download/reload controls.

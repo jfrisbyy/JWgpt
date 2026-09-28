@@ -1,0 +1,27 @@
+# Cloudflare Workers deployment. Build first with `npm run build:cloudflare`.
+# Replace database_id (and bucket_name if different) with your Cloudflare resources (see docs/GITHUB_HANDOFF.md).
+name = "sister-petey"
+main = "dist/server/index.js"
+compatibility_date = "2026-09-01"
+
+[assets]
+directory = "dist/public"
+binding = "ASSETS"
+not_found_handling = "none"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sister-petey"
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "drizzle"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "sister-petey-library"
+
+# Secrets (set with `wrangler secret put NAME`, never in this file):
+#   FAMILY_ADMIN_EMAIL  - email allowed to create the first administrator account
+#   OPENAI_API_KEY      - AI answers (optional; reading and notes work without it)
+#   LIBRARY_IMPORT_KEY  - protects /api/library-import (optional)
+# Optional variable:
+#   OPENAI_MODEL
