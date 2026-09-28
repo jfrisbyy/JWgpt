@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1790291404155,
+      "tag": "0000_zippy_scarlet_spider",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1790551434883,
+      "tag": "0001_powerful_abomination",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1790559055340,
+      "tag": "0002_far_sally_floyd",
+      "breakpoints": true
+    }
+  ]
+}

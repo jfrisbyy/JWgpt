@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "drizzle-kit": "^0.31.11",
+    "drizzle-orm": "^0.45.3",
+    "jsdom": "^30.1.1"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/check-studies.mjs",
+    "test:learning": "npm run build && node scripts/check-learning.mjs && node scripts/check-learning-ui.mjs",
+    "test:all": "npm run build && node scripts/check-calendar.mjs && node scripts/check-library.mjs && node scripts/check-studies.mjs && node scripts/check-refinements.mjs && node scripts/check-search-chat-guide.mjs && node scripts/check-learning.mjs && node scripts/check-library-ui.mjs && node scripts/check-study-ui.mjs && node scripts/check-refinements-ui.mjs && node scripts/check-recovery-ui.mjs && node scripts/check-search-chat-guide-ui.mjs && node scripts/check-learning-ui.mjs"
+  }
+}

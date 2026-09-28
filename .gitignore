@@ -1,0 +1,12 @@
+data/images/*.pack
+
+__pycache__/
+*.pyc
+node_modules/
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+backups/
+exports/

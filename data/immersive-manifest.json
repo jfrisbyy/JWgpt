@@ -1,0 +1,1619 @@
+[
+  {
+    "id": "dx01-15_E",
+    "pages": 610,
+    "images": 3,
+    "questions": 26,
+    "bytes": 501100
+  },
+  {
+    "id": "dx16_E",
+    "pages": 58,
+    "images": 0,
+    "questions": 11,
+    "bytes": 0
+  },
+  {
+    "id": "dx17_E",
+    "pages": 58,
+    "images": 0,
+    "questions": 4,
+    "bytes": 0
+  },
+  {
+    "id": "dx18_E",
+    "pages": 58,
+    "images": 0,
+    "questions": 0,
+    "bytes": 0
+  },
+  {
+    "id": "dx19_E",
+    "pages": 50,
+    "images": 0,
+    "questions": 2,
+    "bytes": 0
+  },
+  {
+    "id": "dx20_E",
+    "pages": 34,
+    "images": 0,
+    "questions": 1,
+    "bytes": 0
+  },
+  {
+    "id": "dx21_E",
+    "pages": 66,
+    "images": 0,
+    "questions": 2,
+    "bytes": 0
+  },
+  {
+    "id": "dx22_E",
+    "pages": 82,
+    "images": 0,
+    "questions": 1,
+    "bytes": 0
+  },
+  {
+    "id": "dx23_E",
+    "pages": 98,
+    "images": 0,
+    "questions": 1,
+    "bytes": 0
+  },
+  {
+    "id": "dx24_E",
+    "pages": 98,
+    "images": 0,
+    "questions": 2,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201001",
+    "pages": 8,
+    "images": 1,
+    "questions": 12,
+    "bytes": 209360
+  },
+  {
+    "id": "km_e-Us_E_201002",
+    "pages": 4,
+    "images": 0,
+    "questions": 19,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201003",
+    "pages": 4,
+    "images": 0,
+    "questions": 12,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201004",
+    "pages": 8,
+    "images": 0,
+    "questions": 28,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201005",
+    "pages": 8,
+    "images": 0,
+    "questions": 26,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201006",
+    "pages": 4,
+    "images": 0,
+    "questions": 20,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201007",
+    "pages": 4,
+    "images": 0,
+    "questions": 13,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201008",
+    "pages": 8,
+    "images": 0,
+    "questions": 20,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201009",
+    "pages": 4,
+    "images": 0,
+    "questions": 4,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201010",
+    "pages": 4,
+    "images": 0,
+    "questions": 8,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201011",
+    "pages": 8,
+    "images": 0,
+    "questions": 19,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201012",
+    "pages": 4,
+    "images": 0,
+    "questions": 20,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201101",
+    "pages": 8,
+    "images": 0,
+    "questions": 20,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201102",
+    "pages": 4,
+    "images": 0,
+    "questions": 17,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201103",
+    "pages": 4,
+    "images": 0,
+    "questions": 13,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201104",
+    "pages": 8,
+    "images": 0,
+    "questions": 26,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201105",
+    "pages": 4,
+    "images": 0,
+    "questions": 9,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201106",
+    "pages": 4,
+    "images": 0,
+    "questions": 19,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201107",
+    "pages": 4,
+    "images": 0,
+    "questions": 13,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201108",
+    "pages": 8,
+    "images": 0,
+    "questions": 19,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201109",
+    "pages": 4,
+    "images": 0,
+    "questions": 9,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201110",
+    "pages": 8,
+    "images": 0,
+    "questions": 14,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201111",
+    "pages": 4,
+    "images": 0,
+    "questions": 8,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201112",
+    "pages": 4,
+    "images": 0,
+    "questions": 8,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201201",
+    "pages": 8,
+    "images": 12,
+    "questions": 9,
+    "bytes": 193960
+  },
+  {
+    "id": "km_e-Us_E_201202",
+    "pages": 4,
+    "images": 0,
+    "questions": 8,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201203",
+    "pages": 4,
+    "images": 0,
+    "questions": 9,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201204",
+    "pages": 8,
+    "images": 0,
+    "questions": 25,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201205",
+    "pages": 4,
+    "images": 0,
+    "questions": 8,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201206",
+    "pages": 4,
+    "images": 0,
+    "questions": 11,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201207",
+    "pages": 8,
+    "images": 2,
+    "questions": 24,
+    "bytes": 13282
+  },
+  {
+    "id": "km_e-Us_E_201208",
+    "pages": 4,
+    "images": 0,
+    "questions": 9,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201209",
+    "pages": 4,
+    "images": 0,
+    "questions": 5,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201210",
+    "pages": 8,
+    "images": 1,
+    "questions": 34,
+    "bytes": 8682
+  },
+  {
+    "id": "km_e-Us_E_201211",
+    "pages": 4,
+    "images": 0,
+    "questions": 12,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201212",
+    "pages": 8,
+    "images": 4,
+    "questions": 15,
+    "bytes": 266970
+  },
+  {
+    "id": "km_e-Us_E_201301",
+    "pages": 4,
+    "images": 0,
+    "questions": 9,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201302",
+    "pages": 4,
+    "images": 0,
+    "questions": 14,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201303",
+    "pages": 8,
+    "images": 2,
+    "questions": 21,
+    "bytes": 34564
+  },
+  {
+    "id": "km_e-Us_E_201304",
+    "pages": 8,
+    "images": 0,
+    "questions": 26,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201305",
+    "pages": 4,
+    "images": 0,
+    "questions": 9,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201306",
+    "pages": 4,
+    "images": 0,
+    "questions": 17,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201307",
+    "pages": 8,
+    "images": 2,
+    "questions": 18,
+    "bytes": 41002
+  },
+  {
+    "id": "km_e-Us_E_201308",
+    "pages": 4,
+    "images": 0,
+    "questions": 16,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201309",
+    "pages": 4,
+    "images": 0,
+    "questions": 8,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201310",
+    "pages": 4,
+    "images": 0,
+    "questions": 19,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201311",
+    "pages": 4,
+    "images": 0,
+    "questions": 10,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201312",
+    "pages": 8,
+    "images": 0,
+    "questions": 16,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201401",
+    "pages": 4,
+    "images": 0,
+    "questions": 12,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201402",
+    "pages": 4,
+    "images": 0,
+    "questions": 5,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201403",
+    "pages": 4,
+    "images": 0,
+    "questions": 4,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201404",
+    "pages": 8,
+    "images": 0,
+    "questions": 19,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201405",
+    "pages": 4,
+    "images": 0,
+    "questions": 4,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201406",
+    "pages": 8,
+    "images": 0,
+    "questions": 20,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201407",
+    "pages": 4,
+    "images": 0,
+    "questions": 10,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201408",
+    "pages": 4,
+    "images": 0,
+    "questions": 7,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201409",
+    "pages": 4,
+    "images": 0,
+    "questions": 5,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201410",
+    "pages": 4,
+    "images": 0,
+    "questions": 5,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201411",
+    "pages": 4,
+    "images": 0,
+    "questions": 3,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201412",
+    "pages": 8,
+    "images": 0,
+    "questions": 4,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201501",
+    "pages": 4,
+    "images": 0,
+    "questions": 5,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201502",
+    "pages": 4,
+    "images": 0,
+    "questions": 6,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201503",
+    "pages": 8,
+    "images": 0,
+    "questions": 16,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201504",
+    "pages": 8,
+    "images": 0,
+    "questions": 7,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201505",
+    "pages": 4,
+    "images": 0,
+    "questions": 5,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201506",
+    "pages": 4,
+    "images": 0,
+    "questions": 0,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201507",
+    "pages": 4,
+    "images": 0,
+    "questions": 7,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201508",
+    "pages": 4,
+    "images": 0,
+    "questions": 1,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201509",
+    "pages": 4,
+    "images": 0,
+    "questions": 6,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201510",
+    "pages": 4,
+    "images": 0,
+    "questions": 4,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201511",
+    "pages": 4,
+    "images": 0,
+    "questions": 4,
+    "bytes": 0
+  },
+  {
+    "id": "km_e-Us_E_201512",
+    "pages": 4,
+    "images": 0,
+    "questions": 8,
+    "bytes": 0
+  },
+  {
+    "id": "w_f-lp_E_202605",
+    "pages": 64,
+    "images": 11,
+    "questions": 101,
+    "bytes": 459596
+  },
+  {
+    "id": "w_E_202605",
+    "pages": 32,
+    "images": 12,
+    "questions": 82,
+    "bytes": 541638
+  },
+  {
+    "id": "w_f-lp_E_202606",
+    "pages": 64,
+    "images": 18,
+    "questions": 84,
+    "bytes": 890886
+  },
+  {
+    "id": "w_E_202606",
+    "pages": 32,
+    "images": 18,
+    "questions": 66,
+    "bytes": 897794
+  },
+  {
+    "id": "w_f-lp_E_202607",
+    "pages": 64,
+    "images": 17,
+    "questions": 74,
+    "bytes": 877844
+  },
+  {
+    "id": "w_E_202607",
+    "pages": 32,
+    "images": 19,
+    "questions": 64,
+    "bytes": 950660
+  },
+  {
+    "id": "w_f-lp_E_202608",
+    "pages": 64,
+    "images": 18,
+    "questions": 86,
+    "bytes": 1008006
+  },
+  {
+    "id": "w_E_202608",
+    "pages": 32,
+    "images": 19,
+    "questions": 65,
+    "bytes": 1000166
+  },
+  {
+    "id": "w_f-lp_E_202609",
+    "pages": 64,
+    "images": 12,
+    "questions": 99,
+    "bytes": 602428
+  },
+  {
+    "id": "w_E_202609",
+    "pages": 32,
+    "images": 12,
+    "questions": 83,
+    "bytes": 637166
+  },
+  {
+    "id": "w_f-lp_E_202610",
+    "pages": 64,
+    "images": 19,
+    "questions": 88,
+    "bytes": 762096
+  },
+  {
+    "id": "w_E_202610",
+    "pages": 32,
+    "images": 23,
+    "questions": 71,
+    "bytes": 867012
+  },
+  {
+    "id": "w_f-lp_E_202611",
+    "pages": 64,
+    "images": 18,
+    "questions": 84,
+    "bytes": 770604
+  },
+  {
+    "id": "w_E_202611",
+    "pages": 32,
+    "images": 20,
+    "questions": 71,
+    "bytes": 871870
+  },
+  {
+    "id": "w_f-lp_E_202612",
+    "pages": 64,
+    "images": 12,
+    "questions": 88,
+    "bytes": 715238
+  },
+  {
+    "id": "w_E_202612",
+    "pages": 32,
+    "images": 13,
+    "questions": 81,
+    "bytes": 811350
+  },
+  {
+    "id": "wp_E_202305",
+    "pages": 16,
+    "images": 17,
+    "questions": 5,
+    "bytes": 900172
+  },
+  {
+    "id": "wp_E_202407",
+    "pages": 16,
+    "images": 16,
+    "questions": 3,
+    "bytes": 1145642
+  },
+  {
+    "id": "wp_E_202509",
+    "pages": 16,
+    "images": 17,
+    "questions": 1,
+    "bytes": 869494
+  },
+  {
+    "id": "wp_E_202609",
+    "pages": 16,
+    "images": 17,
+    "questions": 2,
+    "bytes": 1343044
+  },
+  {
+    "id": "g_E_202311",
+    "pages": 16,
+    "images": 24,
+    "questions": 1,
+    "bytes": 1433812
+  },
+  {
+    "id": "g_E_202411",
+    "pages": 16,
+    "images": 19,
+    "questions": 1,
+    "bytes": 884246
+  },
+  {
+    "id": "g_E_202511",
+    "pages": 16,
+    "images": 22,
+    "questions": 3,
+    "bytes": 1105700
+  },
+  {
+    "id": "g_E_202611",
+    "pages": 16,
+    "images": 21,
+    "questions": 7,
+    "bytes": 1022796
+  },
+  {
+    "id": "ay_E",
+    "pages": 68,
+    "images": 196,
+    "questions": 0,
+    "bytes": 1288802
+  },
+  {
+    "id": "sp_E",
+    "pages": 32,
+    "images": 32,
+    "questions": 5,
+    "bytes": 5872800
+  },
+  {
+    "id": "wi_E",
+    "pages": 32,
+    "images": 10,
+    "questions": 43,
+    "bytes": 2533962
+  },
+  {
+    "id": "we_E",
+    "pages": 32,
+    "images": 19,
+    "questions": 19,
+    "bytes": 2143794
+  },
+  {
+    "id": "ed_E",
+    "pages": 32,
+    "images": 31,
+    "questions": 2,
+    "bytes": 5835344
+  },
+  {
+    "id": "gf_E",
+    "pages": 32,
+    "images": 32,
+    "questions": 1,
+    "bytes": 8779356
+  },
+  {
+    "id": "la_E",
+    "pages": 32,
+    "images": 37,
+    "questions": 40,
+    "bytes": 4656480
+  },
+  {
+    "id": "ol_E",
+    "pages": 32,
+    "images": 26,
+    "questions": 102,
+    "bytes": 7747816
+  },
+  {
+    "id": "bm_E",
+    "pages": 32,
+    "images": 32,
+    "questions": 6,
+    "bytes": 8035228
+  },
+  {
+    "id": "pc_E",
+    "pages": 32,
+    "images": 31,
+    "questions": 20,
+    "bytes": 7079748
+  },
+  {
+    "id": "lf_E",
+    "pages": 32,
+    "images": 34,
+    "questions": 23,
+    "bytes": 5237526
+  },
+  {
+    "id": "lc_E",
+    "pages": 32,
+    "images": 32,
+    "questions": 21,
+    "bytes": 7972744
+  },
+  {
+    "id": "rk_E",
+    "pages": 32,
+    "images": 51,
+    "questions": 15,
+    "bytes": 7105408
+  },
+  {
+    "id": "ph_E",
+    "pages": 32,
+    "images": 44,
+    "questions": 2,
+    "bytes": 8345446
+  },
+  {
+    "id": "ll_E",
+    "pages": 32,
+    "images": 32,
+    "questions": 7,
+    "bytes": 5609442
+  },
+  {
+    "id": "ld_E",
+    "pages": 32,
+    "images": 32,
+    "questions": 0,
+    "bytes": 4814880
+  },
+  {
+    "id": "fg_E",
+    "pages": 32,
+    "images": 32,
+    "questions": 90,
+    "bytes": 5642188
+  },
+  {
+    "id": "hl_E",
+    "pages": 32,
+    "images": 30,
+    "questions": 68,
+    "bytes": 4951724
+  },
+  {
+    "id": "mb_E",
+    "pages": 16,
+    "images": 16,
+    "questions": 4,
+    "bytes": 1643632
+  },
+  {
+    "id": "yc_E",
+    "pages": 32,
+    "images": 37,
+    "questions": 24,
+    "bytes": 3528590
+  },
+  {
+    "id": "jl_E",
+    "pages": 32,
+    "images": 34,
+    "questions": 8,
+    "bytes": 6880270
+  },
+  {
+    "id": "hf_E",
+    "pages": 32,
+    "images": 29,
+    "questions": 9,
+    "bytes": 4196672
+  },
+  {
+    "id": "ypq_E",
+    "pages": 32,
+    "images": 34,
+    "questions": 12,
+    "bytes": 2019084
+  },
+  {
+    "id": "rj_E",
+    "pages": 16,
+    "images": 15,
+    "questions": 5,
+    "bytes": 2553860
+  },
+  {
+    "id": "eslp17_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 17,
+    "bytes": 275422
+  },
+  {
+    "id": "es17_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 17,
+    "bytes": 135778
+  },
+  {
+    "id": "eslp18_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 16,
+    "bytes": 236720
+  },
+  {
+    "id": "es18_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 16,
+    "bytes": 92324
+  },
+  {
+    "id": "th_E",
+    "pages": 26,
+    "images": 3,
+    "questions": 0,
+    "bytes": 291826
+  },
+  {
+    "id": "eslp19_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 19,
+    "bytes": 231696
+  },
+  {
+    "id": "es19_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 19,
+    "bytes": 93172
+  },
+  {
+    "id": "eslp20_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 32,
+    "bytes": 231858
+  },
+  {
+    "id": "es20_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 32,
+    "bytes": 93772
+  },
+  {
+    "id": "eslp21_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 13,
+    "bytes": 300466
+  },
+  {
+    "id": "es21_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 13,
+    "bytes": 91534
+  },
+  {
+    "id": "lffi_E",
+    "pages": 16,
+    "images": 30,
+    "questions": 14,
+    "bytes": 964270
+  },
+  {
+    "id": "eslp22_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 22,
+    "bytes": 301960
+  },
+  {
+    "id": "es22_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 22,
+    "bytes": 111460
+  },
+  {
+    "id": "wfg_E",
+    "pages": 8,
+    "images": 0,
+    "questions": 0,
+    "bytes": 0
+  },
+  {
+    "id": "eslp23_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 14,
+    "bytes": 302166
+  },
+  {
+    "id": "es23_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 14,
+    "bytes": 108736
+  },
+  {
+    "id": "brfi_E",
+    "pages": 32,
+    "images": 81,
+    "questions": 0,
+    "bytes": 7682824
+  },
+  {
+    "id": "lmd_E",
+    "pages": 34,
+    "images": 28,
+    "questions": 4,
+    "bytes": 1332964
+  },
+  {
+    "id": "eslp24_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 16,
+    "bytes": 301226
+  },
+  {
+    "id": "es24_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 22,
+    "bytes": 111878
+  },
+  {
+    "id": "eslp25_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 11,
+    "bytes": 301412
+  },
+  {
+    "id": "es25_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 12,
+    "bytes": 109114
+  },
+  {
+    "id": "eslp26_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 9,
+    "bytes": 301846
+  },
+  {
+    "id": "es26_E",
+    "pages": 130,
+    "images": 2,
+    "questions": 12,
+    "bytes": 108958
+  },
+  {
+    "id": "S-38_E",
+    "pages": 6,
+    "images": 0,
+    "questions": 1,
+    "bytes": 0
+  },
+  {
+    "id": "mwbr_E_202509",
+    "pages": 12,
+    "images": 0,
+    "questions": 1,
+    "bytes": 0
+  },
+  {
+    "id": "mwbr_E_202511",
+    "pages": 13,
+    "images": 0,
+    "questions": 2,
+    "bytes": 0
+  },
+  {
+    "id": "mwbr_E_202601",
+    "pages": 10,
+    "images": 0,
+    "questions": 1,
+    "bytes": 0
+  },
+  {
+    "id": "mwbr_E_202603",
+    "pages": 11,
+    "images": 0,
+    "questions": 2,
+    "bytes": 0
+  },
+  {
+    "id": "mwbr_E_202605",
+    "pages": 12,
+    "images": 0,
+    "questions": 3,
+    "bytes": 0
+  },
+  {
+    "id": "mwbr_E_202607",
+    "pages": 11,
+    "images": 0,
+    "questions": 1,
+    "bytes": 0
+  },
+  {
+    "id": "mwbr_E_202609",
+    "pages": 10,
+    "images": 0,
+    "questions": 1,
+    "bytes": 0
+  },
+  {
+    "id": "mwbr_E_202611",
+    "pages": 12,
+    "images": 0,
+    "questions": 0,
+    "bytes": 0
+  },
+  {
+    "id": "mwb_E_202509",
+    "pages": 16,
+    "images": 16,
+    "questions": 8,
+    "bytes": 626638
+  },
+  {
+    "id": "mwb_E_202511",
+    "pages": 16,
+    "images": 21,
+    "questions": 7,
+    "bytes": 600252
+  },
+  {
+    "id": "mwb_E_202601",
+    "pages": 16,
+    "images": 19,
+    "questions": 6,
+    "bytes": 672468
+  },
+  {
+    "id": "mwb_E_202603",
+    "pages": 16,
+    "images": 18,
+    "questions": 5,
+    "bytes": 524876
+  },
+  {
+    "id": "mwb_E_202605",
+    "pages": 16,
+    "images": 21,
+    "questions": 7,
+    "bytes": 451568
+  },
+  {
+    "id": "mwb_E_202607",
+    "pages": 16,
+    "images": 15,
+    "questions": 4,
+    "bytes": 492852
+  },
+  {
+    "id": "mwb_E_202609",
+    "pages": 16,
+    "images": 17,
+    "questions": 11,
+    "bytes": 391286
+  },
+  {
+    "id": "mwb_E_202611",
+    "pages": 16,
+    "images": 18,
+    "questions": 7,
+    "bytes": 426740
+  },
+  {
+    "id": "gt_E",
+    "pages": 449,
+    "images": 448,
+    "questions": 0,
+    "bytes": 62674816
+  },
+  {
+    "id": "fy_E",
+    "pages": 194,
+    "images": 191,
+    "questions": 0,
+    "bytes": 22554316
+  },
+  {
+    "id": "be_E",
+    "pages": 293,
+    "images": 32,
+    "questions": 62,
+    "bytes": 6268688
+  },
+  {
+    "id": "cllp_E",
+    "pages": 418,
+    "images": 2,
+    "questions": 453,
+    "bytes": 212470
+  },
+  {
+    "id": "cl_E",
+    "pages": 322,
+    "images": 46,
+    "questions": 303,
+    "bytes": 5528182
+  },
+  {
+    "id": "lr_E",
+    "pages": 260,
+    "images": 183,
+    "questions": 285,
+    "bytes": 37642340
+  },
+  {
+    "id": "my_E",
+    "pages": 289,
+    "images": 253,
+    "questions": 642,
+    "bytes": 31722794
+  },
+  {
+    "id": "bhlp_E",
+    "pages": 290,
+    "images": 2,
+    "questions": 441,
+    "bytes": 268308
+  },
+  {
+    "id": "bh_E",
+    "pages": 226,
+    "images": 73,
+    "questions": 299,
+    "bytes": 8506150
+  },
+  {
+    "id": "jd_E",
+    "pages": 194,
+    "images": 85,
+    "questions": 208,
+    "bytes": 9739164
+  },
+  {
+    "id": "cflp_E",
+    "pages": 258,
+    "images": 2,
+    "questions": 261,
+    "bytes": 220074
+  },
+  {
+    "id": "cf_E",
+    "pages": 194,
+    "images": 37,
+    "questions": 181,
+    "bytes": 4091054
+  },
+  {
+    "id": "jdlp_E",
+    "pages": 258,
+    "images": 3,
+    "questions": 254,
+    "bytes": 288572
+  },
+  {
+    "id": "lvlp_E",
+    "pages": 290,
+    "images": 2,
+    "questions": 298,
+    "bytes": 247398
+  },
+  {
+    "id": "lv_E",
+    "pages": 226,
+    "images": 57,
+    "questions": 188,
+    "bytes": 6021416
+  },
+  {
+    "id": "yp2_E",
+    "pages": 324,
+    "images": 196,
+    "questions": 206,
+    "bytes": 19593356
+  },
+  {
+    "id": "btlp_E",
+    "pages": 450,
+    "images": 2,
+    "questions": 391,
+    "bytes": 185704
+  },
+  {
+    "id": "bt_E",
+    "pages": 228,
+    "images": 114,
+    "questions": 246,
+    "bytes": 14569350
+  },
+  {
+    "id": "yb10_E",
+    "pages": 258,
+    "images": 136,
+    "questions": 3,
+    "bytes": 16309262
+  },
+  {
+    "id": "jrlp_E",
+    "pages": 258,
+    "images": 3,
+    "questions": 302,
+    "bytes": 241934
+  },
+  {
+    "id": "jr_E",
+    "pages": 194,
+    "images": 61,
+    "questions": 224,
+    "bytes": 6880860
+  },
+  {
+    "id": "yb11_E",
+    "pages": 258,
+    "images": 155,
+    "questions": 1,
+    "bytes": 17453216
+  },
+  {
+    "id": "yp1_E",
+    "pages": 324,
+    "images": 141,
+    "questions": 191,
+    "bytes": 10548748
+  },
+  {
+    "id": "yb12_E",
+    "pages": 258,
+    "images": 173,
+    "questions": 1,
+    "bytes": 19688806
+  },
+  {
+    "id": "yb13_E",
+    "pages": 196,
+    "images": 113,
+    "questions": 0,
+    "bytes": 11113236
+  },
+  {
+    "id": "ialp_E",
+    "pages": 354,
+    "images": 2,
+    "questions": 402,
+    "bytes": 258596
+  },
+  {
+    "id": "ia_E",
+    "pages": 212,
+    "images": 111,
+    "questions": 242,
+    "bytes": 20713158
+  },
+  {
+    "id": "yb14_E",
+    "pages": 196,
+    "images": 116,
+    "questions": 3,
+    "bytes": 12040310
+  },
+  {
+    "id": "krlp_E",
+    "pages": 434,
+    "images": 2,
+    "questions": 406,
+    "bytes": 179788
+  },
+  {
+    "id": "kr_E",
+    "pages": 234,
+    "images": 153,
+    "questions": 268,
+    "bytes": 28448648
+  },
+  {
+    "id": "yb15_E",
+    "pages": 190,
+    "images": 127,
+    "questions": 3,
+    "bytes": 11711052
+  },
+  {
+    "id": "jylp_E",
+    "pages": 642,
+    "images": 2,
+    "questions": 193,
+    "bytes": 184114
+  },
+  {
+    "id": "jy_E",
+    "pages": 324,
+    "images": 243,
+    "questions": 151,
+    "bytes": 41640060
+  },
+  {
+    "id": "bhs_E",
+    "pages": 226,
+    "images": 108,
+    "questions": 329,
+    "bytes": 8931472
+  },
+  {
+    "id": "yb16_E",
+    "pages": 181,
+    "images": 124,
+    "questions": 2,
+    "bytes": 14477594
+  },
+  {
+    "id": "yb17_E",
+    "pages": 196,
+    "images": 123,
+    "questions": 0,
+    "bytes": 13342926
+  },
+  {
+    "id": "lfb_E",
+    "pages": 244,
+    "images": 230,
+    "questions": 13,
+    "bytes": 40183094
+  },
+  {
+    "id": "lvs_E",
+    "pages": 258,
+    "images": 44,
+    "questions": 245,
+    "bytes": 2432480
+  },
+  {
+    "id": "it-2_E",
+    "pages": 1288,
+    "images": 142,
+    "questions": 67,
+    "bytes": 20430646
+  },
+  {
+    "id": "syr17_E",
+    "pages": 5,
+    "images": 3,
+    "questions": 0,
+    "bytes": 646232
+  },
+  {
+    "id": "it-1_E",
+    "pages": 1288,
+    "images": 158,
+    "questions": 68,
+    "bytes": 21284656
+  },
+  {
+    "id": "rrlp_E",
+    "pages": 384,
+    "images": 7,
+    "questions": 393,
+    "bytes": 393550
+  },
+  {
+    "id": "rr_E",
+    "pages": 244,
+    "images": 194,
+    "questions": 281,
+    "bytes": 14983598
+  },
+  {
+    "id": "od_E",
+    "pages": 228,
+    "images": 4,
+    "questions": 65,
+    "bytes": 291644
+  },
+  {
+    "id": "syr18_E",
+    "pages": 5,
+    "images": 3,
+    "questions": 0,
+    "bytes": 646576
+  },
+  {
+    "id": "syr19_E",
+    "pages": 5,
+    "images": 3,
+    "questions": 0,
+    "bytes": 725836
+  },
+  {
+    "id": "syr20_E",
+    "pages": 5,
+    "images": 3,
+    "questions": 0,
+    "bytes": 725020
+  },
+  {
+    "id": "lff_E",
+    "pages": 260,
+    "images": 461,
+    "questions": 304,
+    "bytes": 13988680
+  },
+  {
+    "id": "syr21_E",
+    "pages": 7,
+    "images": 2,
+    "questions": 0,
+    "bytes": 380778
+  },
+  {
+    "id": "syr22_E",
+    "pages": 7,
+    "images": 2,
+    "questions": 0,
+    "bytes": 382020
+  },
+  {
+    "id": "scl_E",
+    "pages": 130,
+    "images": 9,
+    "questions": 354,
+    "bytes": 184032
+  },
+  {
+    "id": "syr23_E",
+    "pages": 7,
+    "images": 2,
+    "questions": 0,
+    "bytes": 384158
+  },
+  {
+    "id": "syr24_E",
+    "pages": 7,
+    "images": 5,
+    "questions": 0,
+    "bytes": 937480
+  },
+  {
+    "id": "wcgr_E",
+    "pages": 208,
+    "images": 0,
+    "questions": 100,
+    "bytes": 0
+  },
+  {
+    "id": "wcglp_E",
+    "pages": 388,
+    "images": 47,
+    "questions": 271,
+    "bytes": 2090796
+  },
+  {
+    "id": "wcg_E",
+    "pages": 260,
+    "images": 406,
+    "questions": 143,
+    "bytes": 16598094
+  },
+  {
+    "id": "syr25_E",
+    "pages": 7,
+    "images": 5,
+    "questions": 0,
+    "bytes": 933774
+  },
+  {
+    "id": "nwt_E",
+    "pages": 1772,
+    "images": 68,
+    "questions": 25,
+    "bytes": 5416518
+  },
+  {
+    "id": "nwtsty1_E",
+    "pages": 897,
+    "images": 308,
+    "questions": 19,
+    "bytes": 23169390
+  }
+]
