@@ -47,6 +47,8 @@ const chat={messages:[{role:'user',content:'Explain John 3:16'}],verifyOfficial:
 await call('/api/chat',{method:'POST',body:{...chat,excludeMemory:true}});assert.doesNotMatch(payload.input[0].content,/UNIQUE MEMORY/);
 await call('/api/chat',{owner:'person-b',method:'POST',body:chat});assert.doesNotMatch(payload.input[0].content,/UNIQUE MEMORY/);
 globalThis.fetch=async()=>Response.json({output:[{type:'message',content:[{type:'output_text',text:'No official evidence was found.'}]}]});result=await body(await call('/api/chat',{method:'POST',body:chat}));assert.equal(result.provenance.mode,'unverified');
+const used=async()=>(await env.DB.prepare('SELECT COALESCE(SUM(count),0) AS n FROM usage WHERE owner=?').bind('person-a').first()).n,before=await used();
 globalThis.fetch=async()=>new Response('{}',{status:429});assert.equal((await call('/api/chat',{method:'POST',body:chat})).status,429);
+assert.equal(await used(),before,'a failed AI request is not counted against the daily allowance');
 globalThis.fetch=realFetch;
 console.log('Refinements passed: membership and admin bootstrap, invitation redemption/expiry, access revocation, per-person records, conflicts, sharing isolation and revocation, assigned Watchtower weeks, unified search, memory exclusion, official-only search provenance, and AI failure handling.');

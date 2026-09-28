@@ -27,7 +27,7 @@ const source='const testSourceText='+JSON.stringify(corpus)+';\n'+retrieval+'\n'
 // Security headers for every page and file. Inline scripts are not allowed; images may come from https sources used by publications.
 const securityHeaders={
  'X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin','X-Frame-Options':'DENY',
- 'Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data: blob:; connect-src 'self'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
+ 'Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.jw.org https://jw.org https://*.jw-cdn.org https://*.akamaihd.net; connect-src 'self'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
 };
 const entry=`
 const assets=${JSON.stringify(assets)};

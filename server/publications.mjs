@@ -11,7 +11,7 @@ async function publicationAPI(request,env){
 }
 
 async function importLibrary(request,env){
- if(request.method!=='PUT'||!env.LIBRARY_IMPORT_KEY||request.headers.get('X-Import-Key')!==env.LIBRARY_IMPORT_KEY)return json({error:'Not authorized.'},403);
+ if(request.method!=='PUT'||!env.LIBRARY_IMPORT_KEY||!safeEqual(request.headers.get('X-Import-Key')||'',env.LIBRARY_IMPORT_KEY))return json({error:'Not authorized.'},403);
  const key=new URL(request.url).searchParams.get('key')||'';
  if(!/^(?:publications\/[a-zA-Z0-9_-]+\.json\.gz|pdf\/[a-zA-Z0-9_-]+\.pdf|search-index\.json\.gz|search\/[a-z]\.json\.gz|bible\.json\.gz|images\/[a-zA-Z0-9_-]+\.pack)$/.test(key))return json({error:'Invalid import target.'},400);
  if(key.startsWith('publications/'))return json({error:'Use the validated library import in Settings → Library health so questions, images, and search indexes remain consistent.'},409);await env.BUCKET.put(key,request.body);documentCache.clear();biblePromise=null;bibleLexPromise=null;return json({saved:key});
@@ -57,6 +57,6 @@ async function studyAnswers(request,env){
  const raw=await request.text();if(raw.length>25000)return json({error:'Please keep answers under 20,000 characters.'},413);
  let data;try{data=JSON.parse(raw)}catch{return json({error:'Invalid answer.'},400)}
  if(!valid(data.questionId)||typeof data.text!=='string'||data.text.length>20000)return json({error:'Invalid answer.'},400);
- if(id.startsWith('wol-')){const doc=await calendarWorkbookDocument(id.slice(4),env);if(!doc.questions.includes(data.questionId))return json({error:'Question not found.'},404)}else{const doc=await publication(id,env);const page=+data.questionId.match(/^q(\d+)/)[1];if(!doc.pages.some(p=>p.blocks?.some(b=>b.questionId===data.questionId))&&!Object.values(libraryCalendar.meetings).some(w=>w.id===id&&w.questions.includes(data.questionId)))return json({error:'Question not found.'},404);}
+ if(id.startsWith('wol-')){let doc;try{doc=await calendarWorkbookDocument(id.slice(4),env)}catch{return json({error:'This workbook could not be checked right now. Your answer is kept here; please retry.'},502)}if(!doc.questions.includes(data.questionId))return json({error:'Question not found.'},404)}else{const doc=await publication(id,env);const page=+data.questionId.match(/^q(\d+)/)[1];if(!doc.pages.some(p=>p.blocks?.some(b=>b.questionId===data.questionId))&&!Object.values(libraryCalendar.meetings).some(w=>w.id===id&&w.questions.includes(data.questionId)))return json({error:'Question not found.'},404);}
  const answer={text:data.text,updatedAt:new Date().toISOString()};await env.BUCKET.put(prefix+data.questionId+'.json',JSON.stringify(answer),{httpMetadata:{contentType:'application/json'}});await indexStudyAnswers(user,id,{[data.questionId]:answer},env);return json({saved:true,...answer});
 }

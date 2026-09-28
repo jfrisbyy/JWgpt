@@ -35,7 +35,7 @@ for f in manifest:
   text=clean(page.get_text())
   pages.append({'number':i+1,'label':page.get_label() or str(i+1),'text':text})
   for word in set(re.findall(r'[a-z]{3,}',text.lower())):index[word].append(offset+i)
- item={'offset':offset,'id':key,'title':title_for(f,doc),'filename':f['filename'],'category':f['category'],'pageCount':len(doc),'largePrint':bool(re.search(r'lp',f['filename'])),'year':int(re.search(r'20\d\d',f['filename'])[0]) if re.search(r'20\d\d',f['filename']) else None,'driveUrl':f.get('url'),'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'emptyPages':sum(len(p['text'])<20 for p in pages)}
+ item={'offset':offset,'id':key,'title':title_for(f,doc),'filename':f['filename'],'category':f['category'],'pageCount':len(doc),'largePrint':bool(re.search(r'lp',f['filename'])),'year':int(re.search(r'20\d\d',f['filename'])[0]) if re.search(r'20\d\d',f['filename']) else None,'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'emptyPages':sum(len(p['text'])<20 for p in pages)}
  toc=[{'level':x[0],'title':x[1],'page':x[2]} for x in doc.get_toc() if 1<=x[2]<=len(doc)]
  writegz(OUT/(key+'.json.gz'),{'publication':item,'pages':pages,'contents':toc});catalog.append(item);offset+=len(doc)
 writegz(ROOT/'data/search-index.json.gz',dict(index));(ROOT/'data/catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2))
