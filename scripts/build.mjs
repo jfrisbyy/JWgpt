@@ -75,5 +75,5 @@ export default {async fetch(request,env){
 }};`;
 fs.rmSync('dist',{recursive:true,force:true});fs.mkdirSync('dist/server',{recursive:true});fs.mkdirSync('dist/.openai',{recursive:true});
 fs.copyFileSync('.openai/hosting.json','dist/.openai/hosting.json');fs.cpSync('drizzle','dist/drizzle',{recursive:true});
-if(external)fs.cpSync('public','dist/public',{recursive:true});
+if(external){fs.cpSync('public','dist/public',{recursive:true});fs.writeFileSync('dist/public/_headers','/*\n'+Object.entries(securityHeaders).map(([k,v])=>'  '+k+': '+v).join('\n')+'\n')}
 fs.writeFileSync('dist/server/index.js',librarySource+'\n'+source+'\n'+entry);
