@@ -5,7 +5,7 @@ const category=p=>p.category==='bible'?'bible':/^es(?:lp)?\d/.test(p.id)?'daily'
 const label=p=>categories[category(p)]?.[0]||'Bible';
 const title=s=>s.toLowerCase().replace(/\b[a-z]/g,c=>c.toUpperCase());
 const link=(id,page)=>'#publication/'+encodeURIComponent(id)+(page?'/'+page:'');
-async function api(url){const r=await fetch(url),d=await r.json();if(!r.ok)throw Error(d.error||'This source is temporarily unavailable.');return d}
+async function api(url){const r=await fetch(url),d=await readJSON(r);if(!r.ok)throw Error(d.error||'This source is temporarily unavailable.');return d}
 async function getCatalog(){if(!catalogPromise)catalogPromise=api('/api/publications').then(d=>window.publicationCatalog=catalog=d.publications).catch(e=>{catalogPromise=null;throw e});return catalogPromise}
 window.refreshPublicationCatalog=async()=>{catalogPromise=null;return getCatalog()};
 function editions(p){const canonical=id=>id.replace('lp','');return catalog.filter(x=>canonical(x.id)===canonical(p.id))}

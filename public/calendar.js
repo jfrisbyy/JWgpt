@@ -4,7 +4,7 @@ const shift=(day,n)=>{const d=new Date(day+'T12:00:00');d.setDate(d.getDate()+n)
 const label=day=>new Date(day+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
 let today=localDay(),selected=today,dailyRequest=0,meetingRequest=0,homeRequest=0,clock;
 window.studyCalendar={today:()=>today};
-async function api(kind,date){const r=await fetch('/api/calendar/'+kind+'?date='+date),d=await r.json();if(!r.ok)throw Error(d.error);return d}
+async function api(kind,date){const r=await fetch('/api/calendar/'+kind+'?date='+date),d=await readJSON(r);if(!r.ok)throw Error(d.error);return d}
 const wol=day=>'https://wol.jw.org/en/wol/h/r1/lp-e/'+day.split('-').map(Number).join('/');
 function enhance(root){window.linkScriptures?.(root);window.linkPublicationReferences?.(root)}
 function dailyControls(day){return `<nav class="daily-navigation" aria-label="Daily text dates"><button class="button" data-day="${shift(day,-1)}" aria-label="Previous day">←</button><button class="textbutton" data-day="${today}" ${day===today?'disabled':''}>Today</button><button class="button" data-day="${shift(day,1)}" aria-label="Next day">→</button></nav>`}

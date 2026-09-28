@@ -2,7 +2,10 @@
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const keys={petey_notes_v2:'note',petey_annotations_v1:'annotation',petey_sessions_v2:'session'};
 const files=['app.js','meetings.js','selection.js','chat.js','immersive.js','publications.js','scriptures.js','calendar.js','studies.js','flow.js','sidebar.js','search.js','guided.js','workspace.js','family-sessions.js','reliability.js','personal.js','learning.js'];
-async function api(path,options={}){const r=await fetch(path,options);let d;try{d=await r.json()}catch{d={error:r.ok?'The response could not be read. Please retry.':'The server could not be reached ('+r.status+'). Please retry.'}}if(!r.ok){const e=Error(d.error||'Please retry.');e.code=d.code;throw e}return d}
+// Reads a JSON reply; an HTML error page (e.g. a platform 502) becomes a readable error instead of a parse failure.
+async function readJSON(r){try{return await r.json()}catch{return {error:r.ok?'The response could not be read. Please retry.':'The server could not be reached ('+r.status+'). Please retry.'}}}
+window.readJSON=readJSON;
+async function api(path,options={}){const r=await fetch(path,options),d=await readJSON(r);if(!r.ok){const e=Error(d.error||'Please retry.');e.code=d.code;throw e}return d}
 const post=(data)=>({method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
 // Sign-in screen: sign in, create an account with an invitation code, or set a password with a code from the administrator.
 function signInGate(gate,account,mode='signin'){
