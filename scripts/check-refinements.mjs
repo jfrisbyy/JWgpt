@@ -8,8 +8,9 @@ assert.equal((await call('/api/publications',{owner:null})).status,401);
 assert.equal((await call('/api/calendar/daily?date=2026-09-27',{owner:'not-in-family'})).status,403);
 assert.equal((await call('/api/chat',{owner:null,method:'POST',body:{messages:[{role:'user',content:'Hello'}]}})).status,401);
 assert.equal((await body(await call('/api/account',{owner:'not-in-family'}))).member,null);
-const adminRequest=new Request('https://study.test/api/account',{headers:{'oai-authenticated-user-id':'real-owner','oai-authenticated-user-email':'eaglescoolj@gmail.com'}});
-assert.equal((await body(await worker.fetch(adminRequest,env))).member.role,'admin');
+// Identity headers sent by a browser are ignored; only a session cookie signs someone in.
+const forged=new Request('https://study.test/api/account',{headers:{'x-petey-user-id':'person-a','oai-authenticated-user-id':'person-a','oai-authenticated-user-email':'admin@family.test'}});
+assert.equal((await body(await worker.fetch(forged,env))).signedIn,false);
 assert.equal((await call('/api/family/invitations',{owner:'person-b',method:'POST',body:{label:'No'}})).status,403);
 assert.equal((await call('/api/family/invitations',{method:'POST',body:{label:'A relative'},origin:'https://elsewhere.test'})).status,403);
 const invitation=await body(await call('/api/family/invitations',{method:'POST',body:{label:'A relative'}}));assert.ok(invitation.code.length>30);

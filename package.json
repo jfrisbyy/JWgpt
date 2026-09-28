@@ -7,8 +7,17 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "test": "node scripts/check-studies.mjs",
+    "build:cloudflare": "node scripts/build.mjs --external-assets",
+    "check:syntax": "node scripts/check-syntax.mjs",
+    "test": "npm run build && node scripts/check-auth.mjs && node scripts/check-studies.mjs",
     "test:learning": "npm run build && node scripts/check-learning.mjs && node scripts/check-learning-ui.mjs",
-    "test:all": "npm run build && node scripts/check-calendar.mjs && node scripts/check-library.mjs && node scripts/check-studies.mjs && node scripts/check-refinements.mjs && node scripts/check-search-chat-guide.mjs && node scripts/check-learning.mjs && node scripts/check-library-ui.mjs && node scripts/check-study-ui.mjs && node scripts/check-refinements-ui.mjs && node scripts/check-recovery-ui.mjs && node scripts/check-search-chat-guide-ui.mjs && node scripts/check-learning-ui.mjs"
+    "test:all": "npm run check:syntax && npm run build && node scripts/check-auth.mjs && node scripts/check-calendar.mjs && node scripts/check-library.mjs && node scripts/check-studies.mjs && node scripts/check-refinements.mjs && node scripts/check-search-chat-guide.mjs && node scripts/check-learning.mjs && node scripts/check-immersive.mjs && node scripts/check-library-ui.mjs && node scripts/check-study-ui.mjs && node scripts/check-refinements-ui.mjs && node scripts/check-recovery-ui.mjs && node scripts/check-search-chat-guide-ui.mjs && node scripts/check-learning-ui.mjs",
+    "db:migrate:local": "wrangler d1 migrations apply DB --local",
+    "db:migrate": "wrangler d1 migrations apply DB --remote",
+    "dev": "npm run build:cloudflare && wrangler dev",
+    "deploy": "npm run build:cloudflare && wrangler deploy"
+  },
+  "engines": {
+    "node": ">=22.5"
   }
 }

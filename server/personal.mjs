@@ -28,7 +28,7 @@ function semanticVector(intent,model){const v=new Float32Array(model.dimensions)
 function canonicalSource(value){try{const u=new URL(value,'https://study.local');return decodeURIComponent(u.hash||u.href).replace(/\/$/,'')}catch{return ''}}
 function samePassage(a,b){a=canonicalSource(a);b=canonicalSource(b);if(!a||!b)return false;if(a===b)return true;if(a.startsWith('#publication/')&&b.startsWith('#publication/'))return a.split('?')[0]===b.split('?')[0]&&(!a.includes('?anchor=')||!b.includes('?anchor='));const scripture=x=>x.match(/^#bible\/([^/]+)\/(\d+)(?:\/(\d+))?/),x=scripture(a),y=scripture(b);return !!(x&&y&&x[1]===y[1]&&x[2]===y[2]&&(!x[3]||!y[3]||x[3]===y[3]))}
 async function personalAPI(request,env){
- const u=new URL(request.url),owner=request.headers.get('oai-authenticated-user-id'),member=await familyMember(request,env),action=u.pathname.split('/')[3];
+ const u=new URL(request.url),owner=request.headers.get('x-petey-user-id'),member=await familyMember(request,env),action=u.pathname.split('/')[3];
  if(request.method!=='GET')return json({error:'Use GET.'},405);
  if(action==='recall'){const query=str(u.searchParams.get('q'),1000);return json({items:query?await privateRecall(owner,query,env):[]})}
  const data=await personalDocuments(owner,env);

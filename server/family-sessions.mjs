@@ -1,5 +1,5 @@
 async function familySessionAPI(request,env){
- const u=new URL(request.url),owner=request.headers.get('oai-authenticated-user-id'),db=studyDB(env),[, , ,id,contributionId]=u.pathname.split('/'),member=await familyMember(request,env);
+ const u=new URL(request.url),owner=request.headers.get('x-petey-user-id'),db=studyDB(env),[, , ,id,contributionId]=u.pathname.split('/'),member=await familyMember(request,env);
  if(request.method!=='GET'&&request.headers.get('Origin')!==u.origin)return json({error:'Invalid origin.'},403);
  const allowed=async sid=>db.prepare('SELECT f.* FROM family_sessions f JOIN family_participants p ON p.session_id=f.id JOIN members m ON m.owner=f.owner WHERE f.id=? AND p.owner=? AND m.active=1').bind(sid,owner).first();
  if(request.method==='GET'){

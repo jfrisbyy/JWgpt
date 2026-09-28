@@ -44,7 +44,7 @@ async function libraryImage(request,env){
 }
 async function indexStudyAnswers(user,id,answers,env){const meta=publicationCatalog.find(p=>p.id===id),items=Object.entries(answers);if(!items.length)return;const doc=meta?await publication(id,env):null;await studyDB(env).batch(items.map(([qid,a])=>{const page=doc?.pages.find(p=>p.blocks.some(b=>b.questionId===qid))?.number||+(qid.match(/^q(\d+)/)?.[1]||1),record={title:(meta?.title||'Study answer')+' · my answer',text:a.text,url:meta?'#publication/'+id+'/'+page+'?anchor='+qid:'https://wol.jw.org/en/wol/d/r1/lp-e/'+id.slice(4)};return studyDB(env).prepare("INSERT INTO personal_records(owner,kind,id,document,version,updated_at) VALUES (?,'answer',?,?,1,?) ON CONFLICT(owner,kind,id) DO UPDATE SET document=excluded.document,version=personal_records.version+1,updated_at=excluded.updated_at WHERE personal_records.document!=excluded.document").bind(user,id+'/'+qid,JSON.stringify(record),a.updatedAt||new Date().toISOString())}))}
 async function studyAnswers(request,env){
- const user=request.headers.get('oai-authenticated-user-id');if(!user)return json({error:'Sign in to save private study answers.'},401);
+ const user=request.headers.get('x-petey-user-id');if(!user)return json({error:'Sign in to save private study answers.'},401);
  const u=new URL(request.url),id=u.searchParams.get('publication');if(!publicationCatalog.some(p=>p.id===id)&&!/^wol-\d{9}$/.test(id||''))return json({error:'Publication not found.'},404);
  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(user));const owner=Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');
  const prefix='answers/'+owner+'/'+id+'/';const valid=q=>/^q\d+-[a-f0-9]{16}$/.test(q);
